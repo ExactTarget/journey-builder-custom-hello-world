@@ -1,0 +1,39 @@
+doctype html
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8">
+//if IE 8
+  <html class="no-js lt-ie9">
+//[if gt IE 8]><!
+html.no-js
+  //<![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title= pageTitle
+    meta(name='description', content='Validates ExactTarget Journey Builder config.js files for Custom Activities and Custom Triggers')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='stylesheets/normalize-css/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body!= body
+    //if lt IE 7
+      p.browsehappy
+        | You are using an <strong>outdated</strong> browser.
+        | Please <a href="http://browsehappy.com/">upgrade your browser</a>
+        | to improve your experience.
+
+    //- Add your site or application content here
+    div#interface
+        h1.centered= title
+        p.centered
+            if errorMessage
+                strong= errorMessage
+            else
+                strong ExactTarget Journey Builder Custom Trigger and Custom Activity Example 
+        hr
+        block content
+
+    script.
+      window.jQuery || document.write('<script src="javascripts/jquery/jquery.min.js"><\/script>')
+    script(src='javascripts/script.js')

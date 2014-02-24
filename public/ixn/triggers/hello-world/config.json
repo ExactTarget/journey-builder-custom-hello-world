@@ -1,0 +1,38 @@
+{
+    "key": "insert_your_custom_app_extension_for_trigger_key",
+    "lang": {
+        "en-US": {
+            "name": "Hello World",
+            "description": "This is a simple trigger for the Hello World demo app"
+        }
+    },
+    "version": "1.0",
+    "dataExtension": {
+        "fields": [
+            {
+                "name": "alternativeEmail",
+                "dataType": "email",
+                "maxLength": "",
+                "isNullable": false,
+                "defaultValue": ""
+            },
+            {
+                "name": "originEventStart",
+                "dataType": "text",
+                "maxLength": "100",
+                "isNullable": false,
+                "defaultValue": ""
+            }
+        ],
+        "sendableCustomObjectField": "alternativeEmail",
+        "sendableSubscriberField": "_SubscriberKey"
+    },
+    "edit": {
+        "uri": "index.html",
+        "maxHeight": 500,
+        "maxWidth": 750,
+        "minHeight": 300,
+        "minWidth": 450,
+        "steps": 1
+    }
+}

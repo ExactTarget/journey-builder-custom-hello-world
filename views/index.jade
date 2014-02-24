@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  if errorMessage
+    div.errors
+        errorMessage
+  else
+    div.authenticatedContent
+        //p This is the most simple type of app we can create to demonstrate how Journey Builder's Custom Interactions function. We also wanted to show everyone a possible way of composing their HubExchange applications to be a more useful tool. By having your Custom Triggers and Custom Activities as "sub-apps" in your HubExchange app, your Custom Interactions, have the powerful features and connectivity your HubExchange application offers. This also reduces the issue of application management and provisioning, since your HubExchange app can act as a controller to your Journey Builder Custom Interactions.
+
+    p.centered Use the form below to see the Hello World Interaction operate. Results are displayed below the form.
+    div#input
+        div
+            fieldset
+                label(for='email') Enter an alternate email address:
+                    input(id='email',type='text',value='',name='email')
+                label(for='originEventStart') Enter a numeric value:
+                    input(id='originEventStart',type='text',value='',name='originEventStart')
+                div.buttonWrap
+                    input(id='emailSubmit',type='submit',value='Fire the Event')
+    div#output
+        div
+            h3 Event List
+            ul.events
+        div.buttonWrap
+            button(id='fetch') Get latest results
+        div.buttonWrap
+            button(id='clear') Clear Hello World Activity Results
+        ul.results

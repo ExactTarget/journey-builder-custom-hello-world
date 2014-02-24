@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  padding: 50px;
+  text-align: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#interface {
+    margin: 0px auto;
+    border: 1px solid #666;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    padding: 30px;
+    text-align: left;
+    width: 60%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.hsplit {
+    margin: 13px 0px;
+}
+
+#input, #output{
+    border: 1px solid #999;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 7px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#url {
+    width: 100%;
+}
+
+#paste {
+    width: 90%;
+    height: 200px;
+}
+
+.required {
+    font-weight: bold;
+    color: red;
+}
+
+#configType {
+    margin: 7px 0px;
+}
+
+.buttonWrap {
+    margin: 7px 0px;
+}
+
+a {
+  color: #00B7FF;
+}
