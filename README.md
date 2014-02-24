@@ -120,6 +120,8 @@
 
 2. Copy the "Key" property from your App Extension Custom Activity and paste it into config.js.key value
 
+3. Replace the "__insert_your_custom_activity_endpoint__" with your web server's endpoint throughout the file.
+
 #### Associating Custom Trigger to the Contact Model
     Being written tested and written now...
 
