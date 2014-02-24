@@ -72,14 +72,53 @@
 
 1. At this point we're going to need the endpoint for our app and subsequently each app extension
 
+2. If you're using Heroku, create a new app and copy the endpoint.
+
 #### Defining our Trigger App Extension
-    Being written tested and written now...
+1. In App Center on Code@, with your newly created app open, scroll to the bottom of the page
+
+2. Click "Create a new Interaction Studio Trigger" (we'll be renaming this soon)
+
+3. Properties:
+    * Name: Hello World
+    * Key: jb-hello-world-trigger-yourname (Replace yourname with your first and last name, if I am John Smith: johnsmith. This ensures your key is unique)
+    * Description: Hello World Trigger
+    * Endpoint URL: https://&lt;webserver-endpoint&gt;/ixn/triggers/hello-world (no trailing slash)
+    * Help URL: https://&lt;webserver-endpoint&gt;/ixn/triggers/hello-world/help (no trailing slash)
+    * Help Description: Hello World Trigger Help
+    * Category: Trigger
+    * Public Extension: This application and all other installed applications
+    * Upload Icon: Choose the icon in: /public/ixn/triggers/hello-world/images/
+
+4. Save
+
+#### Updating the code to reflect our new Custom Trigger
+1. Open /public/ixn/triggers/hello-world/config.json
+
+2. Copy the "Key" property from your App Extension Custom Trigger and paste it into config.json.key value
 
 #### Defining our Activity App Extension
-    Being written tested and written now...
+1. In App Center on Code@, with your newly created app open, scroll to the bottom of the page
+
+2. Click "Create a new Interaction Studio Activity" (we'll be renaming this soon)
+
+3. Properties:
+    * Name: Hello World Activity
+    * Key: jb-hello-world-activity-yourname (Replace yourname with your first and last name, if I am John Smith: johnsmith. This ensures your key is unique)
+    * Description: Hello World Activity
+    * Endpoint URL: https://&lt;webserver-endpoint&gt;/ixn/activities/hello-world (no trailing slash)
+    * Help URL: https://&lt;webserver-endpoint&gt;/ixn/activities/hello-world/help (no trailing slash)
+    * Help Description: Hello World Trigger Help
+    * Category: Message
+    * Public Extension: This application and all other installed applications
+    * Upload Icon: Choose the icon in: /public/ixn/activities/hello-world/images/
+
+4. Save
 
 #### Updating the code to reflect our new App Extensions
-    Being written tested and written now...
+1. Open /public/ixn/activities/hello-world/config.js
+
+2. Copy the "Key" property from your App Extension Custom Activity and paste it into config.js.key value
 
 #### Associating Custom Trigger to the Contact Model
     Being written tested and written now...
