@@ -97,6 +97,10 @@
 
 2. Copy the "Key" property from your App Extension Custom Trigger and paste it into config.json.key value
 
+3. Open /app.js
+
+4. In the fireEvent handler, insert the name of your Trigger's key in place of the value for: triggerIdFromAppExtensionInAppCenter 
+
 #### Defining our Activity App Extension
 1. In App Center on Code@, with your newly created app open, scroll to the bottom of the page
 
@@ -122,20 +126,59 @@
 
 3. Replace the "__insert_your_custom_activity_endpoint__" with your web server's endpoint throughout the file.
 
-#### Associating Custom Trigger to the Contact Model
-    Being written tested and written now...
+#### Testing our app loads in the Marketing Cloud
+1. Log into the [Marketing Cloud](https://mc.exacttarget.com/cloud)
+
+2. From the App Switcher, choose "Hello World"
+
+3. We should see the Hello World HubExchange app interface
 
 #### Defining our Custom Trigger in Trigger Admin
-    Being written tested and written now...
+1. Log into the [Marketing Cloud](https://mc.exacttarget.com/cloud)
 
-#### Testing our app loads in the Marketing Cloud
-    Being written tested and written now...
+2. Choose Marketing Automation -> Journey Builder
+
+3. While viewing the Journey Builder Dashboard, we should be able to select "Trigger Administration" and see our new trigger in the list
 
 #### Creating our Custom Trigger in Journey Builder
-    Being written tested and written now...
+1. Create a new Interaction
+
+2. Click to "Edit Trigger"
+
+3. Select "Hello World" or whatever you named it from the list (look at for the "new" banner)
+
+4. On the "Configure" step, enter a value you want to test for equality
+
+5. Save it (you'll get a warning, this is a known bug being fixed).
+
+6. Click to edit the Trigger again
+
+7. Click the "Configure" tab, and wait for the value to load
+
+8. Click next and save
+
+9. The Trigger is configured
 
 #### Creating our Custom Activity
-    Being written tested and written now...
+1. Drag the "Hello World" activity from the list onto the Interaction Canvas
+
+2. Hover and click the "Configure" button
+
+3. The Hello World Activity dialog should appear (this is loading from your app)
+
+4. Click save
+
+5. The Activity is configured.
 
 #### Testing our Custom Interaction
-    Being written tested and written now...
+1. Select "Hello World" from the App Switcher on the Marketing Cloud
+
+2. Enter an email that exists in your subscriber list
+
+3. Enter the exact value as you entered in Creating our Custom Trigger in Journey Builder, step 4
+
+4. Click "Fire the Event"
+
+5. Events will come through the wire and post to the "Event List"
+
+6. Click the "Get Latest Results" button and you should see the latest responses which have reached the "Activity"
