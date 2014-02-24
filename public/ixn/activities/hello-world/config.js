@@ -2,7 +2,7 @@ define([], function(){
     return {
         "icon": "images/jb-icon.jpg",
         "iconSmall": "images/jb-icon.jpg", 
-        "key": "insert_your_custom_app_extension_activity_name",
+        "key": "jb-hello-world-activity-bdean-s1",
         "partnerApiObjectTypeId": "IXN.CustomActivity.REST",
         "lang": {
             "en-US": {        
@@ -14,7 +14,7 @@ define([], function(){
         "version": "1.0",
         "apiVersion": "1.0",
        "execute": {
-            "uri": "https://__insert_your_custom_activity_endpoint__/ixn/activities/hello-world/execute/",
+            "uri": "https://jb-hello-world.herokuapp.com/ixn/activities/hello-world/execute/",
 			"inArguments": [],
 			"outArguments": [],
             "verb": "POST",
@@ -24,7 +24,7 @@ define([], function(){
             "timeout": 3000
 		},
         "save": {
-            "uri": "https://__insert_your_custom_activity_endpoint__/ixn/activities/hello-world/save/",
+            "uri": "https://jb-hello-world.herokuapp.com/ixn/activities/hello-world/save/",
 			"verb": "POST",
 			"body": "",
             "format": "json",
@@ -32,7 +32,7 @@ define([], function(){
             "timeout": 3000
         },
         "publish": {
-            "uri": "https://__insert_your_custom_activity_endpoint__/ixn/activities/hello-world/publish/",
+            "uri": "https://jb-hello-world.herokuapp.com/ixn/activities/hello-world/publish/",
             "verb": "POST",
 			"body": "",
             "format": "json",
@@ -40,7 +40,7 @@ define([], function(){
             "timeout": 3000
         },
         "validate": {
-            "uri": "https://__insert_your_custom_activity_endpoint__/ixn/activities/hello-world/validate/",
+            "uri": "https://jb-hello-world.herokuapp.com/ixn/activities/hello-world/validate/",
             "verb": "POST",
 			"body": "",
             "format": "json",
@@ -49,7 +49,7 @@ define([], function(){
         },
 
         "edit": {
-            "uri": "https://__insert_your_custom_activity_endpoint__/ixn/activities/hello-world/",
+            "uri": "https://jb-hello-world.herokuapp.com/ixn/activities/hello-world/",
             "height": 400,
             "width": 500
         }
