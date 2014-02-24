@@ -3,7 +3,6 @@
 // -------------------
 //require('newrelic');
 var express     = require('express');
-var fs          = require('fs');
 var http        = require('http');
 var JWT         = require('./lib/jwtDecoder');
 var path        = require('path');
