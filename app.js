@@ -161,7 +161,7 @@ app.get('/clearList', function( req, res ) {
 });
 
 
-// WORKAROUND FOR ACTIVITY COMMA BUG
+// Used to populate events which have reached the activity in the interaction we created
 app.get('/getActivityData', function( req, res ) {
 	// The client makes this request to get the data
 	if( !activity.logExecuteData.length ) {
