@@ -101,6 +101,8 @@
 
 4. In the fireEvent handler, insert the name of your Trigger's key in place of the value for: triggerIdFromAppExtensionInAppCenter 
 
+5. **NOTE: There is a filter definition XML which requires setup and custom values in [this custom trigger JS file](https://github.com/ExactTarget/journey-builder-custom-hello-world/blob/master/public/ixn/triggers/hello-world/js/helloWorldTrigger.js). What you see inside there now needs updating, please read [MyEvent.js Filter XML property](https://code.exacttarget.com/marketing-automation/journey-builder/interactions/triggers/custom-triggers) secion on Code@ for more information about this piece of your custom trigger.**
+
 #### Defining our Activity App Extension
 1. In App Center on Code@, with your newly created app open, scroll to the bottom of the page
 
@@ -140,7 +142,6 @@
 
 3. While viewing the Journey Builder Dashboard, we should be able to select "Trigger Administration" and see our new trigger in the list
 
-__NOTE: There is a filter definition XML which requires setup and custom values in [this custom trigger JS file](https://github.com/ExactTarget/journey-builder-custom-hello-world/blob/master/public/ixn/triggers/hello-world/js/helloWorldTrigger.js). What you see inside there now needs updating, please read [MyEvent.js Filter XML property](https://code.exacttarget.com/marketing-automation/journey-builder/interactions/triggers/custom-triggers) secion on Code@ for more information about this piece of your custom trigger.
 
 #### Creating our Custom Trigger in Journey Builder
 1. Create a new Interaction
