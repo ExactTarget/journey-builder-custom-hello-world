@@ -101,7 +101,7 @@
 
 4. In the fireEvent handler, insert the name of your Trigger's key in place of the value for: triggerIdFromAppExtensionInAppCenter 
 
-5. **NOTE: There is a filter definition XML which requires setup and custom values in [this custom trigger JS file](https://github.com/ExactTarget/journey-builder-custom-hello-world/blob/master/public/ixn/triggers/hello-world/js/helloWorldTrigger.js). What you see inside there now needs updating, please read [MyEvent.js Filter XML property](https://code.exacttarget.com/marketing-automation/journey-builder/interactions/triggers/custom-triggers) secion on Code@ for more information about this piece of your custom trigger.**
+5. **NOTE: Step 5 IS NOT required, except in cases where the Custom Trigger DE has been associated to the Contact Model and the "Advanced" development flow of implementing Contact Filter Criteria is needed** There is a filter definition XML which requires setup and custom values in [this custom trigger JS file](https://github.com/ExactTarget/journey-builder-custom-hello-world/blob/master/public/ixn/triggers/hello-world/js/helloWorldTrigger.js). What you see inside there now needs updating, please read [MyEvent.js Filter XML property](https://code.exacttarget.com/marketing-automation/journey-builder/interactions/triggers/custom-triggers) section on Code@ for more information about this piece of your custom trigger.
 
 #### Defining our Activity App Extension
 1. In App Center on Code@, with your newly created app open, scroll to the bottom of the page
