@@ -128,6 +128,10 @@
 
 3. Replace the "__insert_your_custom_activity_endpoint__" with your web server's endpoint throughout the file.
 
+#### Re-deploy application to host
+Now that you have updated your configurations to point to the appropriate ExactTarget resources, push your changes.
+
+
 #### Testing our app loads in the Marketing Cloud
 1. Log into the [Marketing Cloud](https://mc.exacttarget.com/cloud)
 
