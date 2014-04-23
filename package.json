@@ -1,6 +1,6 @@
 {
-  "name": "helloWorldInteractionExample",
-  "version": "0.0.3",
+  "name": "<YOUR_PREFIX>-jbdbc-hello-world",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -15,6 +15,6 @@
     "request": "~2.33.0"
   },
   "engines": {
-    "node": "0.10.7"
+    "node": "0.10.26"
   }
 }
