@@ -1,1 +1,30 @@
-<!-- Hello world -->
+<!doctype html>
+<html lang="en" class="fuelux">
+    <head>
+        <meta charset="utf-8">
+        <title>Boot Camp Hello World Trigger Configuration View</title>
+        <link href="//www.fuelcdn.com/fuelux-imh/2.6.0/css/fuelux.min.css" rel="stylesheet" type="text/css">
+        <link href="//www.fuelcdn.com/fuelux-imh/2.6.0/css/fuelux-responsive.css" rel="stylesheet" type="text/css">
+        <script data-main="js/main.js" src="../../../vendor/require.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h2>Boot Camp Hello World Trigger</h2>
+            <p>Trigger initiates Interactions for Contacts meeting the following criteria:</p>
+            <div id="helloWorldTriggerConfigError"></div>
+            <form class="form-horizontal">
+<fieldset>
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="originEventStart">Origin Event Start Value</label>
+  <div class="controls">
+    <input id="originEventStart" name="originEventStart" type="text" placeholder="enter a number" class="input-xlarge">
+  </div>
+</div>
+</fieldset>
+</form>
+            <div id="logs">
+            </div>
+        </div><!-- /.container-fluid -->
+    </body>
+</html>
