@@ -40,46 +40,6 @@ function tokenFromJWT( req, res, next ) {
     next();
 }
 
-/**
-THIS IS A WORKAROUND FOR A KNOWN BUG, DO NOT USE THIS CODE IN PRODUCTION
-**/
-function workaround( req, res, next ) {
-	if( 'POST' !== req.method ) {
-		next();
-	}
-
-	if( '/login' === req.url || '/fireEvent/helloWorld' === req.url ) {
-		next();
-	}
-	
-	if( 
-		'/ixn/activities/hello-world/save/'		=== req.url ||
-		'/ixn/activities/hello-world/execute/'	=== req.url ||
-		'/ixn/activities/hello-world/publish/'	=== req.url ||
-		'/ixn/activities/hello-world/validate/' === req.url
-	){
-		var buf = '';
-		req.on('data', function(chunk){
-			buf += chunk;
-		});
-
-		req.on('end', function(){
-			try{
-				var faultyJSON = /"", *}/;
-				// Cleanup Jira: JB-5249
-				if( buf.match( faultyJSON ) ) {
-					req.body = buf.replace( faultyJSON, '""}' );
-				}
-				next();
-			} catch( err ){
-				console.error( 'ERROR: ', err );
-				next( err );
-			}
-			next();
-		});
-	}
-}
-
 // Use the cookie-based session  middleware
 app.use(express.cookieParser());
 
@@ -91,7 +51,6 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.logger('dev'));
-app.use(workaround);
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
