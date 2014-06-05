@@ -7,6 +7,7 @@
 
 ### Pre-Requisites
 
+* Node.js (to test locally)
 * Must have an ExactTarget Marketing Cloud account
 * Journey Builder and all associated applications  must be provisioned into this account
 * A publicly accessible web server or cloud (I'll be using [Heroku](https://heroku.com) with a single dyno and you can too, just sign up for a free account)
