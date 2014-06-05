@@ -16,11 +16,11 @@ var app = express();
 // Register configs for the environments where the app functions
 // , these can be stored in a separate file using a module like config
 var APIKeys = {
-    appId           : '__insert_your_app_id__',
-    clientId        : '__insert_your_app_client_id__',
-    clientSecret    : '__insert_your_app_client_secret__',
-    appSignature    : '__insert_your_app_signature__',
-    authUrl         : 'https://auth.exacttargetapis.com/v1/requestToken?legacy=1'
+    appId           : '374ab13a-1d3e-4058-9ece-243526ab2ea9',
+    clientId        : 'ktetepg8drm5crwg3cyjz58j',
+    clientSecret    : 'snQfFB6xdvDfuxq2KbWTcxTv',
+    appSignature    : '4unkmuhcl5hsqedxmqdf1hjzxqvq5l1fncrt4tedqqy1mzfubgsxmqqja4acktipyknxizaqdhpkz4yo11ciggooghkzpjiwyp3ilvhoidxtj34jz2fh2oowasss4pv5wy5y1pzpzjg13ulfhwhj1medqtcbwt5joyavk1wf2j0hqcghodmjctmqcfvab0rr0gkdaglfcmxmybxsaquvk1ez2digca3mm5eq4yfgclqz2hkzqh234kj4d03xez5',
+    authUrl         : 'https://auth-qa3s1.exacttargetapis.com/v1/requestToken?legacy=1'
 };
 
 // Simple custom middleware
@@ -80,7 +80,7 @@ app.post('/ixn/triggers/hello-world/', trigger.edit );
 // Abstract Event Handler
 app.post('/fireEvent/:type', function( req, res ) {
     var data = req.body;
-    var triggerIdFromAppExtensionInAppCenter = '__insert_your_trigger_key_here__';
+    var triggerIdFromAppExtensionInAppCenter = 'jbdev-ixn-api-v1-test-harness-trigger';
     var JB_EVENT_API = 'https://www.exacttargetapis.com/interaction-experimental/v1/events';
     var reqOpts = {};
 

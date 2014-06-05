@@ -10,7 +10,7 @@
 * Node.js (to test locally)
 * Must have an ExactTarget Marketing Cloud account
 * Journey Builder and all associated applications  must be provisioned into this account
-* A publicly accessible web server or cloud (I'll be using [Heroku](https://heroku.com) with a single dyno and you can too, just sign up for a free account)
+* A publicly accessible web server or cloud (I'll be using [Heroku](https://heroku.com) with a single dyno and you can too, just sign up for a free account) You'll need the Heroku toolbelt if you're using that PaaS for this app.
 * Web Server or Cloud MUST support SSL (which is why we recommend Heroku...it just works for single dyno apps)
 * A valid Code@ account and associated App Center Developer Account (available from within Code@)
 * Understanding of client-server communications, JavaScript, HTML(5), Node.js and Express

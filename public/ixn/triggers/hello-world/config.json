@@ -1,12 +1,12 @@
 {
-    "key": "__insert_your_custom_trigger_key_here__",
+    "key": "jbdev-ixn-api-v1-test-harness-trigger",
     "lang": {
         "en-US": {
-            "name": "Hello World",
+            "name": "Hello World 2",
             "description": "This is a simple trigger for the Hello World demo app"
         }
     },
-    "version": "1.0",
+    "version": "2.0",
     "dataExtension": {
         "fields": [
             {
