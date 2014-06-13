@@ -26,6 +26,9 @@ function logData( req ) {
         originalUrl: req.originalUrl
     });
         console.log( "body: " + req.body );
+            for( var x in req.body ) {
+                console.log( x + ": " + req.body[x] );
+            }
         console.log( "headers: " + req.headers );
         console.log( "trailers: " + req.trailers );
         console.log( "method: " + req.method );
