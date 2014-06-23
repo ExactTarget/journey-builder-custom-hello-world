@@ -1,8 +1,8 @@
 'use strict';
 var util = require( 'util' );
 
-// NOTE: Each route can render a server-side view
 // Deps
+var util = require( 'util' );
 
 exports.logExecuteData = [];
 

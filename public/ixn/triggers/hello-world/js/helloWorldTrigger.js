@@ -24,6 +24,19 @@ define( function( require ) {
             console.log( 'STEP: ', step );
         }
         */
+
+        /**
+            If you want to have a multi-step configuration view, you need to manage the DOM manually.
+            You can filter what changes to make by implementing the following type of logic when Postmonger from the server triggers an "updateStep" call.
+
+            if( step  >= 1 && step <= 3 ) {
+                $('.step').hide(); // All DOM elements which are steps should have this class (this hides them all)
+                $('#step' + step ).show(); // This selectively only displays the current step
+                // Allow the user to make any changes and when you're ready, use:
+                connection.trigger( 'updateStep', step ); 
+            }
+        **/
+
         var value = $oes.val();
         if( !value ) {
             // Notify user they need to select a value 
