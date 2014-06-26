@@ -190,3 +190,6 @@ Now that you have updated your configurations to point to the appropriate ExactT
 5. Events will come through the wire and post to the "Event List"
 
 6. Click the "Get Latest Results" button and you should see the latest responses which have reached the "Activity"
+
+## Licensing
+ Please see the "LICENSE" file in the root of this repository for information related to licensing of this repository.
