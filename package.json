@@ -17,5 +17,5 @@
   "engines": {
     "node": "0.10.7"
   },
-  "license": "ExactTarget"
+  "license": "BSD-3-Clause"
 }
