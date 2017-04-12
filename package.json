@@ -14,7 +14,7 @@
     "request": "~2.33.0"
   },
   "engines": {
-    "node": "0.10.7"
+    "node": "6.9.4"
   },
   "license": "BSD-3-Clause"
 }
