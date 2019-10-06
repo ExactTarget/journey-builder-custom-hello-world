@@ -10,7 +10,7 @@
     "jade": "*",
     "fuel": "~0.4.1",
     "require": "~0.5.0",
-    "jwt-simple": "~0.1.0",
+    "jwt-simple": "~0.5.6",
     "request": "~2.33.0"
   },
   "engines": {
